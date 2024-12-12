@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Autolog</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="light-gray content">
+
+    <!-- Meniu -->
+    <nav class="sidebar collapse white animate-left" style="z-index:3;" id="mySidebar"><br>
+        <div class="container">
+            <a href="#" onclick="action_close()" class="hide-large right jumbo-size padding hover-gray"
+                title="Inchide meniu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="https://cdn.dribbble.com/users/2910307/screenshots/12234104/image.png?resize=400x0"
+                style="width:45%;" class="round"><br><br>
+            <h4><b>CATALOG AUTO</b></h4>
+        </div>
+        <div class="bar-block">
+            <a href="#autovehicles" onclick="action_close()" class="bar-item button padding text-teal"><i
+                    class="fa fa-th-large fa-fw margin-right"></i>AUTOVEHICULE</a>
+            <a href="#about" onclick="action_close()" class="bar-item button padding"><i
+                    class="fa fa-info-circle fa-fw margin-right"></i>DESPRE</a>
+            <a href="#team" onclick="action_close()" class="bar-item button padding"><i
+                class="fa fa-users fa-fw margin-right"></i>ECHIPA</a>
+            <a href="#contact" onclick="action_close()" class="bar-item button padding"><i
+                    class="fa fa-envelope fa-fw margin-right"></i>CONTACT</a>
+        </div>
+        <div class="panel large">
+            <i class="fa fa-facebook-official hover-opacity margin-right-small"></i>
+            <i class="fa fa-instagram hover-opacity margin-right-small"></i>
+            <i class="fa fa-twitter hover-opacity margin-right-small"></i>
+            <i class="fa fa-linkedin hover-opacity"></i>
+        </div>
+    </nav>
+
+    <div class="overlay hide-large animate-opacity" onclick="action_close()" style="cursor:pointer"
+        title="Ascundere meniu" id="myOverlay"></div>
+
+    <div class="main" style="margin-left:300px">
+
+        <!-- Sectiune Autovehicule -->
+        <header id="autovehicles">
+            <a href="#"><img src="https://cdn.dribbble.com/users/2910307/screenshots/12234104/image.png?resize=400x0" style="width:70px;"
+                    class="circle-crop right margin hide-large hover-opacity"></a>
+            <span class="button hide-large xxlarge hover-text-gray" onclick="action_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="container">
+                <h1><b>M&#259;rci Automobile</b></h1>
+                <div class="section bottombar padding-16">
+                    <span class="margin-right">Categorie:</span>
+                    <button class="button black">TOATE</button>
+                    <button class="button white"><i class="fa fa-car margin-right"></i>Autoturisme</button>
+                    <button class="button white hide-small"><i
+                            class="fa fa-truck margin-right"></i>Autoutilitare</button>
+                    <button class="button white hide-small hide-medium"><i
+                            class="fa fa-motorcycle margin-right"></i>Motociclete</button>
+                    <button class="button white hide-small hide-medium">
+                        <img src="imgs/atv.svg" alt="ATV" width="20" height="20" />
+                        <i class="margin-right"></i>
+                        <span>ATV</span>
+                    </button>
+                    <button class="button white hide-small hide-medium">
+                        <img src="imgs/scooter.svg" alt="scooter" width="20" height="20" />
+                        <i class="margin-right"></i>
+                        <span>Trotinete/scutere electrice</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Lista cu marcile auto -->
+        <div class="row-padding margin-bottom-large">
+            <div class="third container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt="Mercedes-Benz"
+                    style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Mercedes-Benz</b></p>
+                    <p>Mercedes-Benz este o marc&#259; german&#259; consacrat&#259; de automobile, autobuze, camioane &#351;i autoutilitare
+                        care este proprietatea companiei pe ac&#355;iuni DaimlerChrysler AG. &#206;n 2011, Mercedes-Benz era al
+                        doilea mare produc&#259;tor de vehicule de lux la nivel mondial.</p>
+                </div>
+            </div>
+            <div class="third container">
+                <img src="https://prismic-io.s3.amazonaws.com/shacarlacca/c373b861-a5e2-49ea-b120-8fdc985e6f57_Volkswagen_logo_2019.svg"
+                    alt="Volkswagen" style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Volkswagen</b></p>
+                    <p>Volkswagen este o companie constructoare de autoturisme &#351;i SUV-uri din Wolfsburg, Germania.
+                        Compania este al treilea mare produc&#259;tor mondial dup&#259; Toyota (cu 8,41 milioane de unit&#259;&#355;i) &#351;i
+                        General Motors (cu 8,39 milioane de unit&#259;&#355;i v&#226;ndute).</p>
+                </div>
+            </div>
+            <div class="third container">
+                <img src="https://prismic-io.s3.amazonaws.com/shacarlacca/71ff6ff4-fb32-48e4-8202-9fc324621f12_BMW_logo.svg"
+                    alt="BMW" style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>BMW</b></p>
+                    <p>BMW AG este o companie multina&#355;ional&#259; german&#259; care produce &#238;n prezent automobile &#351;i motociclete
+                        de lux &#351;i a produs, de asemenea, motoare de avioane p&#226;n&#259; &#238;n 1945. Compania a fost &#238;nfiin&#355;at&#259; &#238;n
+                        1916 &#351;i &#238;&#351;i are sediul &#238;n M&uuml;nchen, Bavaria. &#206;n 2015, BMW a fost al 12-lea cel mai mare
+                        produc&#259;tor mondial de autovehicule, cu 2.279.503 de vehicule produse.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-padding margin-bottom-large">
+            <div class="third container">
+                <img src="https://prismic-io.s3.amazonaws.com/shacarlacca/b37cf7c7-9123-490a-8b64-ee402730279a_logo-audi.svg"
+                    alt="Audi" style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Audi</b></p>
+                    <p>AUDI AG, cunoscut simplu ca Audi, este un produc&#259;tor de automobile din Germania, cu sediul &#238;n
+                        Ingolstadt, landul Bavaria. Capitalul societ&#259;&#355;ii Audi este de&#355;inut aproape &#238;n totalitate
+                        (99,14%) de Grupul Volkswagen.</p>
+                </div>
+            </div>
+            <div class="third container">
+                <img src="https://prismic-io.s3.amazonaws.com/shacarlacca/5bf87843-559b-46b2-a4bd-f9dc58e3228e_logo-ford.svg"
+                    alt="Ford" style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Ford</b></p>
+                    <p>Ford Motor Company este o corpora&#355;ie multina&#355;ional&#259; american&#259; situat&#259; pe locul cinci &#238;n lume la
+                        produc&#355;ia de automobile (2012). Av&#226;nd sediul &#238;n Deaborn, Michigan, o suburbie a ora&#351;ului
+                        Detroit, produc&#259;torul de automobile a fost fondat de c&#259;tre Henry Ford &#238;n anul 1903.</p>
+                </div>
+            </div>
+            <div class="third container">
+                <img src="https://prismic-io.s3.amazonaws.com/shacarlacca/b996ace6-a996-4184-a3bb-5f1fad8d9896_logo-opel.svg"
+                    alt="Opel" style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Opel</b></p>
+                    <p>Opel este o fabric&#259; produc&#259;toare de vehicule din Germania cu sediul &#238;n Russelsheim, fondat&#259;
+                        &#238;n anul 1862 de c&#259;tre Adam Opel. Ini&#355;ial compania producea ma&#351;ini de cusut, iar din 1886 a
+                        &#238;nceput s&#259; produc&#259; biciclete. &#206;ncep&#226;nd cu anul 1899 compania a &#238;nceput s&#259;
+                        produc&#259; automobile.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-padding margin-bottom-large">
+            <div class="third container">
+                <img src="https://upload.wikimedia.org/wikipedia/de/f/f3/%C5%A0koda_Auto_logo.svg" alt="&Scaron;koda"
+                    style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>&Scaron;koda</b></p>
+                    <p>&Scaron;koda este un produc&#259;tor ceh de automobile, ca vechime unul din primii 4 din lume. Din 1991
+                        apar&#355;ine Grupului Volkswagen. Compania s-a &#238;nfiin&#355;at la 27 iunie 1925, c&#226;nd concernul &Scaron;koda a
+                        cump&#259;rat produc&#259;torul de automobile Laurin & Klement &#238;n Mlad&aacute; Boleslav.</p>
+                </div>
+            </div>
+            <div class="third container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Toyota_EU.svg" alt="Toyota"
+                    style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Toyota</b></p>
+                    <p>Toyota Motor Corporation este o companie multina&#355;ional&#259; care produce automobile, camioane,
+                        autobuze &#351;i robo&#355;i, cu sediul principal &#238;n ora&#351;ul Toyota, Japonia. Toyota este unul din cei trei
+                        mari produc&#259;tori asiatici de autovehicule care concureaz&#259; cu produc&#259;torii americani pe pia&#355;a
+                        mondial&#259;.</p>
+                </div>
+            </div>
+            <div class="third container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Renault_2021.svg" alt="Renault"
+                    style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Renault</b></p>
+                    <p>Renault S.A. este o companie francez&#259; produc&#259;toare de autovehicule, fondat&#259; &#238;n 1899. Are sediul
+                        &#238;n Boulogne-Billancourt, Fran&#355;a &#351;i este unul dintre cei mai mari produc&#259;tori de automobile.
+                        Compania produce o gam&#259; larg&#259; de vehicule, inclusiv ma&#351;ini, camioane, autobuze &#351;i vehicule
+                        electrice.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-padding margin-bottom-large">
+            <div class="third container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/archive/f/f7/20240529142319%21Peugeot_Logo.svg"
+                    alt="Peugeot" style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Peugeot</b></p>
+                    <p>Peugeot este un constructor francez de automobile, parte a grupului Stellantis. Peugeot produce
+                        &#238;n principal autovehicule pentru persoane fizice &#351;i vehicule utilitare. Peugeot a fost implicat
+                        cu succes &#238;n sporturile cu motor de mai bine de un secol.</p>
+                </div>
+            </div>
+            <div class="third container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Dacia-Logo-2021.svg" alt="Dacia"
+                    style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Dacia</b></p>
+                    <p>S.C. Automobile Dacia S.A. este un produc&#259;tor rom&#226;n de automobile care &#238;&#351;i ia numele din regiunea
+                        istoric&#259; str&#259;veche a Europei care constituie Rom&#226;nia de ast&#259;zi. Dacia a luat na&#351;tere &#238;n 1966 la
+                        Coliba&#351;i (ast&#259;zi Mioveni), jude&#355;ul Arge&#351;, av&#226;nd la baz&#259; un acord &#238;ntre autorit&#259;&#355;ile comuniste &#351;i
+                        produc&#259;torul francez de automobile, Renault. Din 1999 apar&#355;ine grupului francez Renault.</p>
+                </div>
+            </div>
+            <div class="third container">
+                <img src="https://www.svgrepo.com/show/306942/volvo.svg" alt="Volvo"
+                    style="width:50%; display: block; margin: auto;" class="picture hover-opacity margin-bottom">
+                <div class="container white">
+                    <p><b>Volvo</b></p>
+                    <p>Grupul Volvo este o corpora&#355;ie multina&#355;ional&#259; de produc&#355;ie suedez&#259; cu sediul &#238;n G&ouml;teborg.
+                        Simbolul Volvo este un semn str&#259;vechi pentru fier. Semnul fierului a fost folosit pentru a
+                        simboliza puterea fierului folosit pentru a construi ma&#351;inile, Suedia este cunoscut&#259; pentru
+                        calitatea fierului.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paginare -->
+        <div class="center padding-32">
+            <div class="bar">
+                <a href="#" class="bar-item button hover-black">&laquo;</a>
+                <a href="#" class="bar-item black button">1</a>
+                <a href="#" class="bar-item button hover-black">2</a>
+                <a href="#" class="bar-item button hover-black">3</a>
+                <a href="#" class="bar-item button hover-black">4</a>
+                <a href="#" class="bar-item button hover-black">&raquo;</a>
+            </div>
+        </div>
+
+        <!-- Sectiune Despre -->
+        <div class="row-padding padding-16" id="about">
+            <div class="half">
+                <img src="https://autocatalogarchive.com/wp-content/uploads/2016/05/giulieta.jpg" alt="Me"
+                    style="width:100%">
+            </div>
+            <div class="half">
+                <img src="https://media.wired.com/photos/5932f488aef9a462de984eda/master/w_1920,c_limit/snow_cars_10a.jpg"
+                    alt="Me" style="width:100%">
+            </div>
+        </div>
+
+        <div class="container padding-large" style="margin-bottom:32px">
+            <h4><b>Despre</b></h4>
+            <p>Autolog este un ghid amplu &#351;i cuprinz&#259;tor, o surs&#259; de informa&#355;ie extrem de util&#259; ce cuprinde informa&#355;ii,
+                fotografii &#351;i date tehnice despre 2200 de ma&#351;ini comercializate pe pia&#355;&#259; rom&#226;neasc&#259;. Prin structura
+                coerent&#259; de prezentare a automobilelor de la A la Z, inclusiv cu datele tehnice ale acestora, Autolog
+                este un ghid esen&#355;ial tuturor celor care &#238;&#351;i doresc s&#259; achizi&#355;ioneze o nou&#259; ma&#351;in&#259;. Analizele complexe
+                &#351;i detaliate ale celor 2200 modele de automobile care se comercializeaz&#259; &#238;n prezent pe pia&#355;a rom&#226;neasc&#259;
+                sunt centralizate &#238;ntr-un mediu cu un format accesibil de pe orice dispozitiv mobil, fie de pe
+                smartphone sau tableta, fie de pe laptop.</p>
+            <hr>
+
+            <!-- Sectiune Echipa -->
+            <div class="container padding-64 center" id="team">
+                <h2>Echipa</h2>
+                <p>Membrii echipei Autolog:</p>
+
+                <div class="row-padding"><br>
+
+                    <div class="quarter">
+                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+                            alt="Person picture" style="width:45%" class="circle-crop hover-opacity">
+                        <h3>Telescu Cosmin</h3>
+                        <p>Web Designer</p>
+                    </div>
+
+                    <div class="quarter">
+                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/scientist_einstein_avatar_professor-512.png"
+                            alt="Person picture" style="width:45%" class="circle-crop hover-opacity">
+                        <h3>Popescu Andrei</h3>
+                        <p>Inovatie</p>
+                    </div>
+
+                    <div class="quarter">
+                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/santa_clous_christmas-512.png"
+                            alt="Person picture" style="width:45%" class="circle-crop hover-opacity">
+                        <h3>Dumitrescu Alex</h3>
+                        <p>CEO</p>
+                    </div>
+
+                    <div class="quarter">
+                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/breaking_bad_chemisrty_avatar_heisenberg-512.png"
+                            alt="Person picture" style="width:45%" class="circle-crop hover-opacity">
+                        <h3>Cristescu Ionut</h3>
+                        <p>Tester</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Sectiune Contact -->
+        <div class="container padding-large gray">
+            <h4 id="contact"><b>Contacta&#355;i-ne</b></h4>
+            <div class="row-padding center padding-24" style="margin:0 -16px">
+                <div class="third dark-gray">
+                    <p><i class="fa fa-envelope xxlarge text-light-gray"></i></p>
+                    <p>cosmin.telescu@student.ub.ro</p>
+                </div>
+                <div class="third teal">
+                    <p><i class="fa fa-map-marker xxlarge text-light-gray"></i></p>
+                    <p>Ia&#351;i, RO</p>
+                </div>
+                <div class="third dark-gray">
+                    <p><i class="fa fa-phone xxlarge text-light-gray"></i></p>
+                    <p>+40 123 123 123</p>
+                </div>
+            </div>
+            <hr class="opacity">
+            <form action="/action_page.php" target="_blank">
+                <div class="section">
+                    <label>Numele complet</label>
+                    <input class="input border" type="text" name="Name" required>
+                </div>
+                <div class="section">
+                    <label>Email</label>
+                    <input class="input border" type="text" name="Email" required>
+                </div>
+                <div class="section">
+                    <label>Mesaj</label>
+                    <input class="input border" type="text" name="Message" required>
+                </div>
+                <button type="submit" class="button black margin-bottom"><i
+                        class="fa fa-paper-plane margin-right"></i>Trimite solicitare</button>
+            </form>
+        </div>
+
+        <!-- Subsol pagina -->
+        <footer class="container padding-32 dark-gray">
+            <div class="row-padding">
+                <div class="third">
+                    <h3>Asisten&#355;&#259;</h3>
+                    <p>Echipa noastr&#259; ofer&#259; asisten&#355;&#259; tehnic&#259; prin apel telefonic conform programului de lucru sau
+                        prin solicitare la adresa de email <i>suport@autolog.ro.</i></p>
+                    <p><b>L-V:&nbsp;&nbsp;09:00-17:00</b><br>
+                        <b>S-D:&nbsp;&nbsp;&#206;nchis</b>
+                    </p>
+                </div>
+
+                <div class="third">
+                    <h3>Articole</h3>
+                    <ul class="ul hoverable">
+                        <li class="padding-16">
+                            <img src="https://cdn.group.renault.com/dac/ro/newduster.jpg.ximg.small.jpg/b838a33e39.jpg"
+                                class="left margin-right" style="width:80px">
+                            <span class="large">Noua Dacia Duster</span><br>
+                            <span>Primii 200 de clien&#355;i vor putea rezerva Noul Duster &#238;ncep&#226;nd chiar din data de 4
+                                ianuarie.</span>
+                        </li>
+                        <li class="padding-16">
+                            <img src="https://resource.digitaldealer.com.au/image/1416960-1718168984-1_1200_0-c.jpg"
+                                class="left margin-right" style="width:100px">
+                            <span class="large">Volvo nu renun&#355;&#259; la XC90</span><br>
+                            <span>Va fi produs at&#226;ta timp c&#226;t va exista cerere</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="third">
+                    <h3>Taguri uzuale</h3>
+                    <p>
+                        <span class="tag black margin-bottom">Autoturisme</span> <span
+                            class="tag gray small margin-bottom">Renault</span> <span
+                            class="tag gray small margin-bottom">VOLVO</span>
+                        <span class="tag gray small margin-bottom">Peugeot</span> <span
+                            class="tag gray small margin-bottom">Mercedes</span> <span
+                            class="tag gray small margin-bottom">DACIA</span>
+                        <span class="tag gray small margin-bottom">Cabrio</span> <span
+                            class="tag gray small margin-bottom">Sport</span> <span
+                            class="tag gray small margin-bottom">4x4</span>
+                        <span class="tag gray small margin-bottom">Offroad</span> <span
+                            class="tag gray small margin-bottom">Berlin&#259;</span> <span
+                            class="tag gray small margin-bottom">Leasing</span>
+                        <span class="tag gray small margin-bottom">Showroom</span> <span
+                            class="tag gray small margin-bottom">Electric</span>
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="black center padding-24">Copyright &#169; 2024 Autolog</div>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function action_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function action_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
