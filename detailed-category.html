@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Autolog</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+</head>
+
+<body class="light-gray content">
+
+    <!-- Meniu -->
+    <nav class="sidebar collapse white animate-left" style="z-index:3;" id="mySidebar"><br>
+        <div class="container">
+            <a href="#" onclick="action_close()" class="hide-large right jumbo-size padding hover-gray"
+                title="Inchide meniu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <a href="index.html">
+                <img src="https://cdn.dribbble.com/users/2910307/screenshots/12234104/image.png?resize=400x0"
+                    style="width:45%;" class="round"><br><br>
+            </a>
+            <h4><b>CATALOG AUTO</b></h4>
+        </div>
+        <div class="bar-block">
+            <a href="#autovehicles" onclick="action_close()" class="bar-item button padding text-teal"><i
+                    class="fa fa-th-large fa-fw margin-right"></i>AUTOVEHICULE</a>
+            <a href="#about" onclick="action_close()" class="bar-item button padding"><i
+                    class="fa fa-info-circle fa-fw margin-right"></i>DESPRE</a>
+            <a href="#team" onclick="action_close()" class="bar-item button padding"><i
+                    class="fa fa-users fa-fw margin-right"></i>ECHIPA</a>
+            <a href="#contact" onclick="action_close()" class="bar-item button padding"><i
+                    class="fa fa-envelope fa-fw margin-right"></i>CONTACT</a>
+        </div>
+        <div class="panel large">
+            <i class="fa fa-facebook-official hover-opacity margin-right-small"></i>
+            <i class="fa fa-instagram hover-opacity margin-right-small"></i>
+            <i class="fa fa-twitter hover-opacity margin-right-small"></i>
+            <i class="fa fa-linkedin hover-opacity"></i>
+        </div>
+    </nav>
+
+    <div class="overlay hide-large animate-opacity" onclick="action_close()" style="cursor:pointer"
+        title="Ascundere meniu" id="myOverlay"></div>
+
+    <div class="main" style="margin-left:300px">
+
+        <!-- Sectiune Autovehicule -->
+        <header id="autovehicles">
+            <a href="#"><img src="https://cdn.dribbble.com/users/2910307/screenshots/12234104/image.png?resize=400x0"
+                    style="width:70px;" class="circle-crop right margin hide-large hover-opacity"></a>
+            <span class="button hide-large xxlarge hover-text-gray" onclick="action_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="container">
+                <h1><b>Mercedes-Benz</b></h1>
+                <div class="section bottombar padding-16">
+                    <span class="margin-right">Categorie:</span>
+                    <button class="button black">TOATE</button>
+                    <button class="button white">AMG</button>
+                    <button class="button white hide-small">Maybach</button>
+                    <button class="button white hide-small hide-medium">G Class</button>
+                    <button class="button white hide-small hide-medium">V Class</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Lista modele auto -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.27.0/feather.min.js"
+            integrity="sha256-xHkYry2yRjy99N8axsS5UL/xLHghksrFOGKm9HvFZIs=" crossorigin="anonymous"></script>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="card margin-bottom-large">
+                        <div class="card-body py-5">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <img src="https://media.oneweb.mercedes-benz.com/images/dynamic/europe/RO/223979/805_055/iris.png?q=COSY-EU-100-1713d0VXqbSFqtyO67PobzIr3eWsrrCsdRRzwQZUnRZbMw3SGtGyjtsd2spcUfpLcXGEuiXJ0l34AOB2NQnbApjtwI5uVczQC3qkOkzNRLkm7jxafhKVFSQ%25vq9tayLRDLVYaxW0SrH1dBln8wfQcoiZLbXM4FaIrTg9HgT6PD8LoSeWiahtsd4JtcUfgOqXGEPbwJ0leohOB2sMcbApUTbI5uLoYQC3ah1kzNH%25km7j82ohKVipQ%25vq4ykyLRgY2Yax%25a9rH1GBin8w0AEoiZB7pM4FAy2Tg956p6PDakNSeWHeutsd8J3cUfiFWXGE4TEJ0lg6fOB2Pb%25bApeIXI5usQuQC3UkTkzNGLnm7j0avhKVBHN%25vqNtayLRjc2YaxVohrH1gJln8wzOyoiZC5lM4F8CJTg9ihT6PDV1bSeWsmRtsdUsdcUfGUyXGE0aRJ0lB4xOBi1aftkV3xb15YxKD12rbpldCdcqcgVGB4NPVHF8ukSa0Y&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                                        class="img-fluid mb-3" alt="car_model" />
+                                </div>
+                                <div class="col-lg-9">
+                                    <h4>Mercedes-Maybach Clasa S</h4>
+                                    <a
+                                        href="https://www.mercedes-benz.ro/passengercars/models/saloon/mercedes-maybach-s-class/overview.html">www.mercedes-benz.ro/maybach</a>
+                                    <div class="button-list mt-4 mb-3">
+                                        <button type="button" class="btn btn-primary-rgba"><i
+                                                class="feather icon-message-square mr-2"></i>Asisten&#355;&#259;</button>
+                                        <button type="button" class="btn btn-success-rgba"><i
+                                                class="feather icon-phone mr-2"></i>Sun&#259;
+                                            reprezentan&#355;&#259;</button>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Consum mixt :</th>
+                                                    <td class="p-1">10,4 - 14,3 L/100km</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">0-100 km/h :</th>
+                                                    <td class="p-1">4,5 s</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Putere :</th>
+                                                    <td class="p-1">450 kW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Vitez&#259; maxim&#259; :</th>
+                                                    <td class="p-1">250 km/h</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card margin-bottom-large">
+                        <div class="card-body py-5">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <img src="https://media.oneweb.mercedes-benz.com/images/dynamic/europe/RO/297155/805_055/iris.png?q=COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZgk4ZbMw3SGtGyjtsd2vtcUfp8cXGEuiRJ0l3IrOB2NzObApRAlI5ux4uQC31gFkzNwtnm7jA7mhKV50E%25vq4tTyLRgLFYaxP5ErH1entn8wso3oiZUIXM4FAyrTg95Y36PDCIDSeWHmjtsd8s3cUfiONXGE4bVJ0lg6tOB2PbcbApeIoI5usKYQC3Uv3kzNLtnm7jG63hKVUp4%25vq7XFyLRKucYax2PsrH18Bin8wiT3oiZ46IM4FgTwTg735wrcldu63eSzeji9Q6DF1s1n2nvligKfLlCVzWcY54I&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                                        class="img-fluid mb-3" alt="car_model" />
+                                </div>
+                                <div class="col-lg-9">
+                                    <h4>Mercedes-AMG EQS 53 4MATIC+</h4>
+                                    <a
+                                        href="https://www.mercedes-benz.ro/passengercars/models/saloon/eqs/amg.html">www.mercedes-benz.ro/amg</a>
+                                    <div class="button-list mt-4 mb-3">
+                                        <button type="button" class="btn btn-primary-rgba"><i
+                                                class="feather icon-message-square mr-2"></i>Asisten&#355;&#259;</button>
+                                        <button type="button" class="btn btn-success-rgba"><i
+                                                class="feather icon-phone mr-2"></i>Sun&#259;
+                                            reprezentan&#355;&#259;</button>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Putere :</th>
+                                                    <td class="p-1">658 cp</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Cuplu :</th>
+                                                    <td class="p-1">950 Nm</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">0-100 km/h :</th>
+                                                    <td class="p-1">3,8 s</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Autonomie :</th>
+                                                    <td class="p-1">626 km/h</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card margin-bottom-large">
+                        <div class="card-body py-5">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <img src="https://assets.oneweb.mercedes-benz.com/iris/iris.png?COSY-EU-100-1713d0VXqbWFqtyO67PobzIr3eWsrrCsdRRzwQZgk4ZbMw3SGtlaWtsd2H%25cUfgUfXGEzymJ0lcItOB2PBqbApekRI5usr2QC3vT6khQOZ9w45SeW0ZItsdCYQcUfzK6XGE7BjJ0lWJxOB2dXqbApk6RI5ugfaQC3AX7kzNWG6m7jdCZhKVfuM%25vqky9yLRaYVYaxEohrH1oB1n8wQQcoiZqOYM4zuA1YtEWpTu%25KB7NLFIT9ZxeedNtjD%259j6hVNpLpIZIGwC7Ux0wPfejr9j=&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                                        class="img-fluid mb-3" alt="car_model" />
+                                </div>
+                                <div class="col-lg-9">
+                                    <h4>Mercedes-AMG G 63</h4>
+                                    <a
+                                        href="https://www.mercedes-benz.ro/passengercars/models/suv/g-class/amg.html">www.mercedes-benz.ro/amg</a>
+                                    <div class="button-list mt-4 mb-3">
+                                        <button type="button" class="btn btn-primary-rgba"><i
+                                                class="feather icon-message-square mr-2"></i>Asisten&#355;&#259;</button>
+                                        <button type="button" class="btn btn-success-rgba"><i
+                                                class="feather icon-phone mr-2"></i>Sun&#259;
+                                            reprezentan&#355;&#259;</button>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Putere :</th>
+                                                    <td class="p-1">430 kW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Cuplu :</th>
+                                                    <td class="p-1">850 Nm</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">0-100 km/h :</th>
+                                                    <td class="p-1">4,4 s</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Vitez&#259; maxim&#259; :</th>
+                                                    <td class="p-1">240 km/h</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card margin-bottom-large">
+                        <div class="card-body py-5">
+                            <div class="row">
+                                <div class="col-lg-3 text-center">
+                                    <img src="https://assets.oneweb.mercedes-benz.com/iris/iris.png?COSY-EU-100-1713d0VXq7xXqtyO67PobzIr3eWsrrCsdRRzwQZUOBJGE1UHFm9hMi9QC%25j9DkzyjVWfDZ4PiTQqtsOfER1q7gXxwRF9O1J0hPPwOB%25xfZbAy1ZFI5Ye19QCrpCDkzKkVWm7vSCdhKLZgf%25vaFzEyLHdxlYa87l2rHizHpn84BBuoigAT3M4aMONTgHaSj6P8HWVSeipFqts4WfRcUgRzxXGPPL1J0bF1wOBT2vZbA6oLFI5SF39QCtm2DkzchsWm7pJFdhKlxef%25v2xfEyLp1BlYau1a2rH3w5pn8NpUuoijuu3M4IW1NTgQxKj6PhduVSe%25ddqtsy2sRcUYpvxXGru81J0n3UwOBqBGZbARl0FI5xAa9QCPyADkzeXzWm7sAUdhKWR3f%25vdxDEyLf1rlYaE1G2rHlwopn82J8uoipOA3M4u31NTg3Npj6PNjWVSeju7qtsVXaRcUqJexXGVXG1J0qj0wOBbXfZbA86QFI5iW59QC4GHDkzgYhWm7zmUdhK7hzf%25vKcREyLvCUlYaLDe2rHaWLpn83zUuoiN7z3M4j62NTgaqNj6PHH6VSe8uLqtsi3PRcU4NExXrL%25ejFzAv1L3HYZfUGE10UPbb5HF8B308wuiHvTvEUEksYnQPmsOCb8V08=&imgt=P27&bkgnd=9&pov=BE040&uni=m&width=610&crop="
+                                        class="img-fluid mb-3" alt="car_model" />
+                                </div>
+                                <div class="col-lg-9">
+                                    <h4>Mercedes-Clasa V Marco Polo</h4>
+                                    <a
+                                        href="https://www.mercedes-benz.ro/passengercars/models/van/marco-polo/overview.html">www.mercedes-benz.ro</a>
+                                    <div class="button-list mt-4 mb-3">
+                                        <button type="button" class="btn btn-primary-rgba"><i
+                                                class="feather icon-message-square mr-2"></i>Asisten&#355;&#259;</button>
+                                        <button type="button" class="btn btn-success-rgba"><i
+                                                class="feather icon-phone mr-2"></i>Sun&#259;
+                                            reprezentan&#355;&#259;</button>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Consum mixt :</th>
+                                                    <td class="p-1">7,6 - 7,8 L/100km</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Putere :</th>
+                                                    <td class="p-1">174 kW</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Num&#259;r locuri :</th>
+                                                    <td class="p-1">6 locuri pe scaune</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="p-1">Emisii CO2 &#238;n regim mixt :</th>
+                                                    <td class="p-1">221 - 197 g/km</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+
+        </script>
+
+        <!-- Paginare -->
+        <div class="center padding-32">
+            <div class="bar">
+                <a href="#" class="bar-item button hover-black">&laquo;</a>
+                <a href="#" class="bar-item black button">1</a>
+                <a href="#" class="bar-item button hover-black">2</a>
+                <a href="#" class="bar-item button hover-black">3</a>
+                <a href="#" class="bar-item button hover-black">4</a>
+                <a href="#" class="bar-item button hover-black">&raquo;</a>
+            </div>
+        </div>
+
+        <!-- Sectiune Despre -->
+        <div class="row-padding padding-16" id="about">
+            <div class="half">
+                <img src="https://autocatalogarchive.com/wp-content/uploads/2016/05/giulieta.jpg" alt="Me"
+                    style="width:100%">
+            </div>
+            <div class="half">
+                <img src="https://media.wired.com/photos/5932f488aef9a462de984eda/master/w_1920,c_limit/snow_cars_10a.jpg"
+                    alt="Me" style="width:100%">
+            </div>
+        </div>
+
+        <div class="container padding-large" style="margin-bottom:32px">
+            <h4><b>Despre</b></h4>
+            <p>Autolog este un ghid amplu &#351;i cuprinz&#259;tor, o surs&#259; de informa&#355;ie extrem de util&#259;
+                ce cuprinde informa&#355;ii,
+                fotografii &#351;i date tehnice despre 2200 de ma&#351;ini comercializate pe pia&#355;&#259;
+                rom&#226;neasc&#259;. Prin structura
+                coerent&#259; de prezentare a automobilelor de la A la Z, inclusiv cu datele tehnice ale acestora,
+                Autolog
+                este un ghid esen&#355;ial tuturor celor care &#238;&#351;i doresc s&#259; achizi&#355;ioneze o
+                nou&#259; ma&#351;in&#259;. Analizele complexe
+                &#351;i detaliate ale celor 2200 modele de automobile care se comercializeaz&#259; &#238;n prezent pe
+                pia&#355;a rom&#226;neasc&#259;
+                sunt centralizate &#238;ntr-un mediu cu un format accesibil de pe orice dispozitiv mobil, fie de pe
+                smartphone sau tableta, fie de pe laptop.</p>
+            <hr>
+
+            <!-- Sectiune Echipa -->
+            <div class="container padding-64 center" id="team">
+                <h2>Echipa</h2>
+                <p>Membrii echipei Autolog:</p>
+
+                <div class="row-padding"><br>
+
+                    <div class="quarter">
+                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
+                            alt="Person picture" style="width:45%" class="circle-crop hover-opacity">
+                        <h3>Telescu Cosmin</h3>
+                        <p>Web Designer</p>
+                    </div>
+
+                    <div class="quarter">
+                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/scientist_einstein_avatar_professor-512.png"
+                            alt="Person picture" style="width:45%" class="circle-crop hover-opacity">
+                        <h3>Popescu Andrei</h3>
+                        <p>Inovatie</p>
+                    </div>
+
+                    <div class="quarter">
+                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/santa_clous_christmas-512.png"
+                            alt="Person picture" style="width:45%" class="circle-crop hover-opacity">
+                        <h3>Dumitrescu Alex</h3>
+                        <p>CEO</p>
+                    </div>
+
+                    <div class="quarter">
+                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/breaking_bad_chemisrty_avatar_heisenberg-512.png"
+                            alt="Person picture" style="width:45%" class="circle-crop hover-opacity">
+                        <h3>Cristescu Ionut</h3>
+                        <p>Tester</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Sectiune Contact -->
+        <div class="container padding-large gray">
+            <h4 id="contact"><b>Contacta&#355;i-ne</b></h4>
+            <div class="row-padding center padding-24" style="margin:0 -16px">
+                <div class="third dark-gray">
+                    <p><i class="fa fa-envelope xxlarge text-light-gray"></i></p>
+                    <p>cosmin.telescu@student.ub.ro</p>
+                </div>
+                <div class="third teal">
+                    <p><i class="fa fa-map-marker xxlarge text-light-gray"></i></p>
+                    <p>Ia&#351;i, RO</p>
+                </div>
+                <div class="third dark-gray">
+                    <p><i class="fa fa-phone xxlarge text-light-gray"></i></p>
+                    <p>+40 123 123 123</p>
+                </div>
+            </div>
+            <hr class="opacity">
+            <form action="/action_page.php" target="_blank">
+                <div class="section">
+                    <label>Numele complet</label>
+                    <input class="input border" type="text" name="Name" required>
+                </div>
+                <div class="section">
+                    <label>Email</label>
+                    <input class="input border" type="text" name="Email" required>
+                </div>
+                <div class="section">
+                    <label>Mesaj</label>
+                    <input class="input border" type="text" name="Message" required>
+                </div>
+                <button type="submit" class="button black margin-bottom"><i
+                        class="fa fa-paper-plane margin-right"></i>Trimite solicitare</button>
+            </form>
+        </div>
+
+        <!-- Subsol pagina -->
+        <footer class="container padding-32 dark-gray">
+            <div class="row-padding">
+                <div class="third">
+                    <h3>Asisten&#355;&#259;</h3>
+                    <p>Echipa noastr&#259; ofer&#259; asisten&#355;&#259; tehnic&#259; prin apel telefonic conform
+                        programului de lucru sau
+                        prin solicitare la adresa de email <i>suport@autolog.ro.</i></p>
+                    <p><b>L-V:&nbsp;&nbsp;09:00-17:00</b><br>
+                        <b>S-D:&nbsp;&nbsp;&#206;nchis</b>
+                    </p>
+                </div>
+
+                <div class="third">
+                    <h3>Articole</h3>
+                    <ul class="ul hoverable">
+                        <li class="padding-16">
+                            <img src="https://cdn.group.renault.com/dac/ro/newduster.jpg.ximg.small.jpg/b838a33e39.jpg"
+                                class="left margin-right" style="width:80px">
+                            <span class="large">Noua Dacia Duster</span><br>
+                            <span>Primii 200 de clien&#355;i vor putea rezerva Noul Duster &#238;ncep&#226;nd chiar din
+                                data de 4
+                                ianuarie.</span>
+                        </li>
+                        <li class="padding-16">
+                            <img src="https://resource.digitaldealer.com.au/image/1416960-1718168984-1_1200_0-c.jpg"
+                                class="left margin-right" style="width:100px">
+                            <span class="large">Volvo nu renun&#355;&#259; la XC90</span><br>
+                            <span>Va fi produs at&#226;ta timp c&#226;t va exista cerere</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="third">
+                    <h3>Taguri uzuale</h3>
+                    <p>
+                        <span class="tag black margin-bottom">Autoturisme</span> <span
+                            class="tag gray small margin-bottom">Renault</span> <span
+                            class="tag gray small margin-bottom">VOLVO</span>
+                        <span class="tag gray small margin-bottom">Peugeot</span> <span
+                            class="tag gray small margin-bottom">Mercedes</span> <span
+                            class="tag gray small margin-bottom">DACIA</span>
+                        <span class="tag gray small margin-bottom">Cabrio</span> <span
+                            class="tag gray small margin-bottom">Sport</span> <span
+                            class="tag gray small margin-bottom">4x4</span>
+                        <span class="tag gray small margin-bottom">Offroad</span> <span
+                            class="tag gray small margin-bottom">Berlin&#259;</span> <span
+                            class="tag gray small margin-bottom">Leasing</span>
+                        <span class="tag gray small margin-bottom">Showroom</span> <span
+                            class="tag gray small margin-bottom">Electric</span>
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="black center padding-24">Copyright &#169; 2024 Autolog</div>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function action_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function action_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -508,3 +508,32 @@ a {
 .text-light-gray {
     color: #f1f1f1 !important
 }
+
+.table-borderless td {
+    border: 0 !important
+}
+
+.table td {
+    color: #8A98AC;
+    vertical-align: middle;
+    border-top: 1px solid rgba(0, 0, 0, 0.03) !important;
+    padding: 0.6rem !important
+}
+
+.btn-primary-rgba {
+    background-color: rgba(80, 111, 228, 0.1) !important;
+    border: none !important;
+    color: #506fe4 !important
+}
+
+.btn-success-rgba {
+    background-color: rgba(67, 209, 135, 0.1) !important;
+    border: none !important;
+    color: #43d187 !important
+}
+
+.card {
+    border: none !important;
+    border-radius: 3px !important;
+    background-color: #ffffff !important
+}
